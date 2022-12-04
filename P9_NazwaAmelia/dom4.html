@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perhitungan</title>
+</head>
+<body>
+    <div class="perhitungan">
+        <h1>MEHITUNG JUMLAH DUA BILANGAN</h1>
+        <input type="text" name="value1" value="" id="value1">
+        <br>+<br>
+        <input type="text" name="value2" value="" id="value2">
+        <br>=<br>
+        <input type="button" value="add" name="sumbit" onclick="addNum()">
+        <br><br>
+        <input type="text" id="answer" name="answer" value="">
+    </div>
+
+    <script>
+        function addNum(){
+            var val1 = parseInt(document.getElementById("value1").value);
+            var val2 = parseInt(document.getElementById("value2").value);
+            var ansD = document.getElementById("answer");
+            ansD.value = val1+val2;
+        }
+    </script>
+</body>
+</html>
