@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Kalkulator</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            margin: 50px 350px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+
+    <script>
+        function dekor1() {
+            dekor_1 = document.getElementById("home");
+            dekor_1.style.color = "aqua";
+        }
+
+        function dekor2() {
+            dekor_2 = document.getElementById("home");
+            dekor_2.style.color = "black";
+        }
+        
+        function imagepicker() {
+            const list_image = ["cina.jpeg", "indonesia.jpg", "jepang.jpg", "korea sel.jpg", "malaysia.png", "arab.jpg"]
+            let pilihan = document.getElementById("option");
+            if(pilihan.value == "CINA") {
+                let select = list_image[0];
+                document.getElementById("img").src = `img/${select}`
+                alert("Ini gambar cina.jpeg")
+            }
+            
+
+            if(pilihan.value == "INDONESIA") {
+                let select = list_image[1];
+                document.getElementById("img").src = `img/${select}`
+                alert("Ini gambar indonesia.jpg")
+            }
+
+            if(pilihan.value == "JEPANG") {
+                let select = list_image[2];
+                document.getElementById("img").src = `img/${select}`
+                alert("Ini gambar jepang.jpg")
+            }
+
+            if(pilihan.value == "KOREA") {
+                let select = list_image[3];
+                document.getElementById("img").src = `img/${select}`
+                alert("Ini gambar korea sel.jpg")
+            }
+
+            if(pilihan.value == "MALAYSIA") {
+                let select = list_image[4];
+                document.getElementById("img").src = `img/${select}`
+                alert("Ini gambar malaysia.png")
+            }
+
+            if(pilihan.value == "ARAB") {
+                let select = list_image[5];
+                document.getElementById("img").src = `img/${select}`
+                alert("Ini gambar arab.jpg")
+            }
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <a href="" onmouseover="dekor1()" onmouseout="dekor2()" id="home"><h1>Welcome to Traditional Dress Image</h1></a>
+    <hr>
+    <br>
+    <select id="option" onchange="imagepicker()">
+        <option value="" selected>Pilih Gambar</option>
+        <option value="CINA">CINA</option>
+        <option value="INDONESIA">INDONESIA</option>
+        <option value="JEPANG">JEPANG</option>
+        <option value="KOREA">KOREA</option>
+        <option value="MALAYSIA">MALAYSIA</option>
+        <option value="ARAB">ARAB</option>
+    </select>
+    <br>
+    <div class="container" id="container">
+        <div class="box" id="box">
+            <img id="img">
+        </div>
+    </div>
+
+
+</body>
+</html>
