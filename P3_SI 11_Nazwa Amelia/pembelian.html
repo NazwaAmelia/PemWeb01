@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction History</title>
+  </head>
+  <style>
+    .navbar {
+      background-color:#d9b48f;
+      border-style: solid;
+      width: 1200px;
+      margin: auto;
+    }
+
+    .ul-navbar {
+      display: flex;
+      list-style-type: none;
+      gap: 200px;
+    }
+
+    li {
+      padding: 0rem 0rem;
+    }
+
+    .content {
+      display: flex;
+    }
+
+    .gambar {
+      padding: 40px 5px 5px 75px;
+    }
+
+    img {
+      border-radius: 25px;
+    }
+
+    .form {
+      padding: 40px 10px 10px 130px;
+    }
+  </style>
+  <body style="background-color: #f5f0eb">
+    <div class="navbar">
+      <ul class="ul-navbar">
+        <li>
+          <a>Home &nbsp;
+          |  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; Generate link  &nbsp;
+          | &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; Transaction History &nbsp; 
+          | &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Policy &nbsp;
+          | &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  Logout</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="gambar">
+        <img
+          src="img/samsung galaxy.webp"
+          alt="Semasung Galaxy Z Fold 4"
+        />
+      </div>
+      <div class="form">
+        <table>
+          <tr>
+            <td><label for="title here">Title Here</label></td>
+            <td>
+              :
+              <input
+                type="text"
+                required
+                id="title here"
+                value="Smartphone Samsung"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="description">Description</label></td>
+            <td>
+              :
+              <textarea>Year: 2022                Model: Galaxy Z Fold 4        Condition: new
+              </textarea>
+            </td>
+          </tr>
+         <tr>
+            <td><label for="Color">Color</label></td>
+            <td>
+              :
+              <select name="Color" id="id_Color" size="1">
+                <option>Graygreen</option>
+                <option>Beige</option>
+                <option>Phantom</option>
+                <option>Dark Black</option>
+                <option>White</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="account number">Account Number</label></td>
+            <td>
+              :
+              <input
+                type="text"
+                required
+                id="account number"
+                value="134-768-890-4"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Bank">Bank</label></td>
+            <td>
+              :
+              <select name="Bank" id="id_Bank" size="1">
+                <option>BCA</option>
+                <option>BRI</option>
+                <option>ALLO BANK</option>
+                <option>BNI</option>
+                <option>BANK BUKOPIN</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="account holder">Account Holder</label></td>
+            <td>
+              :
+              <input
+                type="text"
+                required
+                id="account holder"
+                value="Name Hana"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Transaction">Transaction</label></td>
+            <td>: <input type="number" min="1" max="10" id="Transaction" value="1" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="color: ">
+              * if the transacation is for 3 person choose from the drop-down
+              list
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="color: #bf9c78">
+              <input type="checkbox" id="mobile_phone" checked="" />
+              <label for="email">Send to mobile phone</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td style="color: #bf9c78">
+              <input type="checkbox" id="email" checked="" />
+              <label for="email">Send to Email</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Send to mobile phone">Send to mobile phone</label>
+            </td>
+            <td>
+              :
+              <input
+                type="text"
+                required
+                id="Send to mobile phone"
+                value="089522077588"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Send to Email</label></td>
+            <td>
+              :
+              <input
+                type="email"
+                required
+                id="email"
+                value="amelianazwa09@gmail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <a href="pembayaran.html">
+                <br>
+                <br>
+                <br>
+                <input 
+                type="submit" 
+                value="Generate Zuwa Link" 
+                style="background-color: #bf9c78; color: white" 
+              /></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
